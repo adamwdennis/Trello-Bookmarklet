@@ -44,12 +44,11 @@
     }
 
     // Get the labels
-    var labelItemArr = $(".filter-item .color-label").parent();
+    var labelItemArr = $(".filter-item.color-label.selected").parent();
     var labels = [];
     for(var i = 0; i < labelItemArr.length; ++i) {
       labels.push($(labelItemArr[i]).attr('data-name'));
     }
-    alert("YEP: " + labels);
 
     // Create the card
     if(name) {
