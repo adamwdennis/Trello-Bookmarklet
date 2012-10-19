@@ -1,6 +1,5 @@
 (function(window){
   var $;
-  var _;
 
   /* This is run after we've connected to Trello and selected a list */
   var run = function(Trello, idList) {
