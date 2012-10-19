@@ -194,20 +194,9 @@
         document.getElementsByTagName("head")[0].appendChild(script);
       }
     },
-    function(next) {
-      if(window.underscore) {
-        next(null);
-      } else {
-        var script = document.createElement('script');
-        script.src = "//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.2/underscore-min.js";
-        script.onload = next;
-        document.getElementsByTagName("head")[0].appendChild(script);
-      }
-    },
     // Get the user's App Key, either from local storage, or by prompting them to retrieve it
     function(ev, next) {
       $ = window.jQuery;
-      _ = window.underscore;
 
       var appKey = store(appKeyName) || window[appKeyName];
       if(appKey && appKey.length == 32) {
