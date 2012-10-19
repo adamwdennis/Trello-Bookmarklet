@@ -43,7 +43,7 @@
     }
 
     // Get the labels
-    var labels = $(".color-label").text().trim();
+    var labels = $(".filter-item .color-label").text().trim();
     alert(labels);
 
     // Create the card
