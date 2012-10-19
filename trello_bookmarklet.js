@@ -11,7 +11,7 @@
 
       // We're looking at a GitHub issue
       //name = $("#show_issue .number strong").text() + " " + $("#show_issue .content-title").text();
-      name = $("#show_issue .number strong").text() + " " + $("#show_issue .discussion-topic-title").text();
+      name = $("#show_issue .number strong").text() + " - " + $("#show_issue .discussion-topic-title").text();
 
     } else if ($("#all_commit_comments").length) {
 
@@ -44,6 +44,7 @@
 
     // Get the labels
     var labels = $(".color-label").text().trim();
+    alert(labels);
 
     // Create the card
     if(name) {
